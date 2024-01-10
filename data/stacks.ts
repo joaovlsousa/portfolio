@@ -12,7 +12,7 @@ export interface Stack {
 
 export const stacks: Stack[] = [
   {
-    title: 'frontend',
+    title: 'Front-end',
     items: [
       {
         name: 'CSS',
@@ -59,7 +59,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'design',
+    title: 'Design',
     items: [
       {
         name: 'Figma',
@@ -68,7 +68,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'backend',
+    title: 'Back-end',
     items: [
       {
         name: 'Express',
@@ -106,7 +106,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'database',
+    title: 'Database',
     items: [
       {
         name: 'MySQL',
@@ -120,7 +120,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'infrastructure',
+    title: 'Infraestrutura',
     items: [
       {
         name: 'Vercel',
@@ -134,7 +134,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'version-control',
+    title: 'Controle de versão',
     items: [
       {
         name: 'Git',
@@ -148,7 +148,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'extensions',
+    title: 'Extesões do vs-code',
     items: [
       {
         name: 'ESLint',
@@ -165,7 +165,7 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'apps',
+    title: 'Apps',
     items: [
       {
         name: 'Discord',
