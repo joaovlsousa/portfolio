@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-import { Navbar } from '@/components/navbar'
 import { Sidebar } from '@/components/sidebar'
+import { Navbar } from '@/components/sidebar/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +25,11 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
           <Sidebar />
-          <main className="md:ml-72 flex-1">{children}</main>
+          <main className="lg:ml-72 flex-1">
+            <section className="m-auto w-full lg:w-[52rem] py-6 lg:py-10 px-4 lg:px-0 space-y-6">
+              {children}
+            </section>
+          </main>
         </ThemeProvider>
       </body>
     </html>

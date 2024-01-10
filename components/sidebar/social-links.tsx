@@ -8,23 +8,24 @@ import {
 } from '@radix-ui/react-icons'
 import Link from 'next/link'
 
-import { Button } from './ui/button'
+import { Button } from '@/components/ui/button'
+import { emailLink, githubLink, linkedinLink } from '@/lib/data/links'
 
 export function SocialLinks() {
   const links = [
     {
       label: 'Github',
-      href: 'https://github.com/joaovlsousa/',
+      href: githubLink,
       icon: GitHubLogoIcon,
     },
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/joaovsousadev/',
+      href: linkedinLink,
       icon: LinkedInLogoIcon,
     },
     {
       label: 'E-mail',
-      href: 'mailto:joaov.lmsousa@gmail.com',
+      href: emailLink,
       icon: EnvelopeClosedIcon,
     },
   ]
