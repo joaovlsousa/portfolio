@@ -1,9 +1,16 @@
 import { getMostUsedTechs } from '@/data/stacks'
+import { Metadata } from 'next'
 
+import { Description } from '@/components/description'
 import { TalkToMeButtons } from '@/components/talk-to-me-buttons'
+import { Title } from '@/components/title'
 import { Separator } from '@/components/ui/separator'
 import { Academic } from './_components/academic'
 import { Info } from './_components/info'
+
+export const metadata: Metadata = {
+  title: 'Sobre mim',
+}
 
 function getAge(birthDate: string) {
   return Math.floor((Date.now() - new Date(birthDate).getTime()) / 3.15576e10)
@@ -18,7 +25,7 @@ export default function AboutMePage() {
   return (
     <div className="space-y-6">
       <section className="space-y-6">
-        <h1 className="text-2xl font-bold">Sobre mim</h1>
+        <Title>Sobre mim</Title>
         <div className="space-y-3">
           <Info title="Nome">João Vitor</Info>
           <Info title="Idade">{age} anos</Info>
@@ -38,45 +45,45 @@ export default function AboutMePage() {
       <Separator />
 
       <section>
-        <h1 className="text-2xl font-bold">Formação acadêmica</h1>
+        <Title>Formação acadêmica</Title>
         <Academic
           title="Instituto Federal da Paraíba"
           description="Ensino Médio + Técnico"
           period="2020 - 2022"
         >
-          <p>
+          <Description>
             Tive a oportunidade de fazer o curso de Técnico em Informática
             integrado ao ensino médio, onde na ocasião pude aprender sobre
             diversas tecnologias, como: HTML5, CSS3, MySQL, PHP, JavaScript,
             Java, além de desenvolver diversos projetos utilizando essas
             tecnologias.
-          </p>
+          </Description>
         </Academic>
         <Academic
           title="Universidade Estadual da Paraíba"
           description="Bacharelado"
           period="2023 - Atualmente"
         >
-          <p>
+          <Description>
             Atualmente, estou me graduando em Ciência da Computação, onde estou
             aprendendo novas tecnologias, como: Python, C++, ReactJS,
             PostgreSQL. E sigo me aprimorando na parte do front-end
             desenvolvendo projetos com essas e outras tecnologias que estou
             estudando fora da faculdade, como NextJs, TailwindCSS, entre outras.
-          </p>
+          </Description>
         </Academic>
       </section>
 
       <Separator />
 
       <section className="space-y-3">
-        <h1 className="text-2xl font-bold">Fale comigo</h1>
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <Title>Fale comigo</Title>
+        <Description>
           Sinta-se à vontade para entrar em contato comigo através das
           informações de contato fornecidas abaixo. Estou sempre aberto a novas
           oportunidades, colaborações e conversas envolventes sobre o
           emocionante campo da tecnologia e além.
-        </p>
+        </Description>
         <TalkToMeButtons />
       </section>
     </div>

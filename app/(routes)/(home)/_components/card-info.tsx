@@ -25,7 +25,12 @@ export function CardInfo({
   orientation = 'horizontal',
 }: CardInfoProps) {
   return (
-    <Card className={cn('w-full', orientation === 'vertical' && 'h-96')}>
+    <Card
+      className={cn(
+        'w-full',
+        orientation === 'vertical' && 'h-[25rem] lg:h-96',
+      )}
+    >
       <CardHeader>
         <div className="flex items-center justify-between">
           <div className="flex items-center">

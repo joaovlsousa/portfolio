@@ -27,9 +27,7 @@ export function Academic({
           {description}, <span className="text-xs text-sky-500">{period}</span>
         </CardDescription>
       </CardHeader>
-      <CardContent className="text-sm text-muted-foreground leading-relaxed">
-        {children}
-      </CardContent>
+      <CardContent>{children}</CardContent>
     </Card>
   )
 }
