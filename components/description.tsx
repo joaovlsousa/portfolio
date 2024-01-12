@@ -1,5 +1,16 @@
-export function Description({ children }: { children: React.ReactNode }) {
+import { cn } from '@/lib/utils'
+
+interface DescriptionProps {
+  children: React.ReactNode
+  className?: string
+}
+
+export function Description({ children, className }: DescriptionProps) {
   return (
-    <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
+    <p
+      className={cn('text-sm text-muted-foreground leading-relaxed', className)}
+    >
+      {children}
+    </p>
   )
 }

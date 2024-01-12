@@ -28,10 +28,10 @@ export default function ProjectsPage() {
         <Title>Front-end</Title>
         <div className="space-y-8">
           <Project
-            title="IFPB"
-            description="ifpb"
-            githubUrl="/li"
-            imageUrl="/images/ifpb.png"
+            title="Supportify"
+            description="Um site que tem como objetivo gerenciar os atendimentos de um usuário ou empresa. Você pode cadastrar tanto clientes quanto atendimentos referentes aos seus clientes."
+            githubUrl="https://github.com/joaovlsousa/support-management-web"
+            imageUrl="/projects/support-management.png"
             appUrl="j"
           />
         </div>

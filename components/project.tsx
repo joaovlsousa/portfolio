@@ -22,7 +22,7 @@ export function Project({
   appUrl,
 }: ProjectProps) {
   return (
-    <div className="flex flex-col gap-y-4 md:gap-y-0 md:flex-row md:items-center md:justify-between">
+    <div className="flex flex-col gap-y-4 md:gap-y-0 md:gap-x-6 md:flex-row md:items-center md:justify-between">
       <Image
         src={imageUrl}
         alt={title}
@@ -30,7 +30,7 @@ export function Project({
         height={720}
         className="w-full md:w-1/2 aspect-video rounded-md"
       />
-      <div className="w-full md:w-1/2 flex flex-col md:items-end gap-y-3">
+      <div className="w-full md:w-1/2 flex flex-col gap-y-3">
         <Title>{title}</Title>
         <Description>{description}</Description>
 
@@ -43,7 +43,7 @@ export function Project({
             </Button>
           )}
           <Button asChild variant="outline">
-            <Link href={githubUrl}>
+            <Link href={githubUrl} target="_blank">
               <GitHubLogoIcon className="w-3 h-3 mr-2" />
               Ver código
             </Link>
