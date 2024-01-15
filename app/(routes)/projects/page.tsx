@@ -30,9 +30,8 @@ export default function ProjectsPage() {
           <Project
             title="Supportify"
             description="Um site que tem como objetivo gerenciar os atendimentos de um usuário ou empresa. Você pode cadastrar tanto clientes quanto atendimentos referentes aos seus clientes."
-            githubUrl="https://github.com/joaovlsousa/support-management-web"
+            githubUrl="https://github.com/joaovlsousa/supportify"
             imageUrl="/projects/support-management.png"
-            appUrl="j"
           />
         </div>
       </section>
