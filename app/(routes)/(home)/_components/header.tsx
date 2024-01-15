@@ -1,4 +1,3 @@
-import Profile from '@/private/images/Profile.jpg'
 import Image from 'next/image'
 
 import { Badge } from '@/components/ui/badge'
@@ -13,7 +12,7 @@ export function Header() {
   return (
     <header className="w-full flex items-center gap-x-6">
       <Image
-        src={Profile}
+        src="/images/profile.jpg"
         alt="Imagem de perfil"
         height={100}
         width={100}
