@@ -6,7 +6,7 @@ import {
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
-import { emailLink, githubLink, linkedinLink } from '@/lib/data/links'
+import { emailLink, githubLink, linkedinLink } from '@/data/links'
 
 export function TalkToMeButtons() {
   return (

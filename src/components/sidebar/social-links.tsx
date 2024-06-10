@@ -9,7 +9,7 @@ import {
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
-import { emailLink, githubLink, linkedinLink } from '@/lib/data/links'
+import { emailLink, githubLink, linkedinLink } from '@/data/links'
 
 export function SocialLinks() {
   const links = [
@@ -43,7 +43,7 @@ export function SocialLinks() {
             variant="ghost"
             className="w-full hover:bg-sky-700/15 justify-start group"
           >
-            <Link href={link.href}>
+            <Link href={link.href} target="_blank">
               <link.icon className="w-4 h-4 mr-2 group-hover:text-sky-500" />
               <p>{link.label}</p>
               <ArrowTopRightIcon className="w-3 h-3 ml-auto text-sky-500" />

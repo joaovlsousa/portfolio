@@ -8,8 +8,8 @@ import {
 import { Description } from '@/components/layout/description'
 import { Project } from '@/components/project'
 import { Tech } from '@/components/tech'
+import { linkedinLink } from '@/data/links'
 import { getMostUsedTechs } from '@/data/stacks'
-import { linkedinLink } from '@/lib/data/links'
 
 import { CardInfo } from './_components/card-info'
 import { Experiences } from './_components/experiences'

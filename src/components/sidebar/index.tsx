@@ -6,7 +6,7 @@ import { AboutMeLinks } from '@/components/sidebar/about-me-links'
 import { SocialLinks } from '@/components/sidebar/social-links'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { githubLink } from '@/lib/data/links'
+import { githubLink } from '@/data/links'
 import { cn } from '@/lib/utils'
 
 interface SidebarProps {
