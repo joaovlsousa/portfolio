@@ -1,4 +1,4 @@
-import { TechProps } from '@/components/tech'
+import { TechProps } from '@/components/layout/tech'
 
 export interface Stack {
   title: string
@@ -27,7 +27,7 @@ export const stacks: Stack[] = [
         icon: '/techs/javascript.svg',
       },
       {
-        name: 'NextJS',
+        name: 'Next.js',
         icon: '/techs/nextjs.svg',
         invert: true,
         mostUsed: true,
@@ -38,18 +38,18 @@ export const stacks: Stack[] = [
         invert: true,
       },
       {
-        name: 'React',
+        name: 'React.js',
         icon: '/techs/react.svg',
-        mostUsed: true,
-      },
-      {
-        name: 'TailwindCSS',
-        icon: '/techs/tailwindcss.svg',
         mostUsed: true,
       },
       {
         name: 'Typescript',
         icon: '/techs/typescript.svg',
+        mostUsed: true,
+      },
+      {
+        name: 'TailwindCSS',
+        icon: '/techs/tailwindcss.svg',
         mostUsed: true,
       },
       {
@@ -59,21 +59,11 @@ export const stacks: Stack[] = [
     ],
   },
   {
-    title: 'Design',
-    items: [
-      {
-        name: 'Figma',
-        icon: '/techs/figma.svg',
-      },
-    ],
-  },
-  {
     title: 'Back-end',
     items: [
       {
         name: 'Express',
         icon: '/techs/express.svg',
-        mostUsed: true,
       },
       {
         name: 'Fastify',
@@ -82,26 +72,26 @@ export const stacks: Stack[] = [
         mostUsed: true,
       },
       {
-        name: 'Java',
-        icon: '/techs/java.svg',
+        name: 'Nest.js',
+        icon: '/techs/nest.svg',
+        mostUsed: true,
       },
       {
-        name: 'JavaScript',
-        icon: '/techs/javascript.svg',
+        name: 'Java',
+        icon: '/techs/java.svg',
       },
       {
         name: 'Node',
         icon: '/techs/nodejs.svg',
       },
       {
+        name: 'Typescript',
+        icon: '/techs/typescript.svg',
+      },
+      {
         name: 'Prisma',
         icon: '/techs/prisma.svg',
         invert: true,
-        mostUsed: true,
-      },
-      {
-        name: 'Typescript',
-        icon: '/techs/typescript.svg',
       },
     ],
   },
@@ -111,11 +101,25 @@ export const stacks: Stack[] = [
       {
         name: 'MySQL',
         icon: '/techs/mysql.svg',
-        mostUsed: true,
       },
       {
         name: 'PostgreSQL',
         icon: '/techs/postgresql.svg',
+        mostUsed: true,
+      },
+      {
+        name: 'Docker',
+        icon: '/techs/docker.svg',
+        mostUsed: true,
+      },
+    ],
+  },
+  {
+    title: 'Design',
+    items: [
+      {
+        name: 'Figma',
+        icon: '/techs/figma.svg',
       },
     ],
   },
@@ -144,40 +148,6 @@ export const stacks: Stack[] = [
         name: 'Github',
         icon: '/techs/github.svg',
         invert: true,
-      },
-    ],
-  },
-  {
-    title: 'Extesões do vs-code',
-    items: [
-      {
-        name: 'ESLint',
-        icon: '/techs/eslint.svg',
-      },
-      {
-        name: 'Prettier',
-        icon: '/techs/prettier.svg',
-      },
-      {
-        name: 'Live server',
-        icon: '/techs/live-server.svg',
-      },
-    ],
-  },
-  {
-    title: 'Apps',
-    items: [
-      {
-        name: 'Discord',
-        icon: '/techs/discord.svg',
-      },
-      {
-        name: 'Firefox',
-        icon: '/techs/firefox.svg',
-      },
-      {
-        name: 'Visual Studio Code',
-        icon: '/techs/vscode.svg',
       },
     ],
   },

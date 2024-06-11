@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 
-export function Experiences() {
-  const experiences = [
+export function Academic() {
+  const academic = [
     {
       name: 'Universidade Estadual da Paraíba',
       image: '/images/uepb.png',
@@ -28,7 +28,7 @@ export function Experiences() {
 
   return (
     <div className="space-y-6">
-      {experiences.map((exp) => (
+      {academic.map((exp) => (
         <div key={exp.name} className="flex items-start gap-x-2">
           <div className="rounded-full h-10 w-10 aspect-square flex justify-center items-center p-1">
             <Image

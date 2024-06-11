@@ -2,17 +2,17 @@ import {
   BackpackIcon,
   ClipboardIcon,
   DesktopIcon,
-  LaptopIcon,
+  LightningBoltIcon,
 } from '@radix-ui/react-icons'
 
 import { Description } from '@/components/layout/description'
+import { Tech } from '@/components/layout/tech'
 import { Project } from '@/components/project'
-import { Tech } from '@/components/tech'
 import { linkedinLink } from '@/data/links'
 import { getMostUsedTechs } from '@/data/stacks'
 
+import { Academic } from './_components/academic'
 import { CardInfo } from './_components/card-info'
-import { Experiences } from './_components/experiences'
 import { Header } from './_components/header'
 
 export default function Home() {
@@ -27,31 +27,37 @@ export default function Home() {
         href="/about-me"
         linkLabel="Saiba mais"
       >
-        <Description>
-          Olá, meu nome é João Vitor, sou um desenvolvedor front-end muito
-          dedicado, tenho experiência nas tecnologias mais atuais do mercado
-          como{' '}
-          <span className="text-foreground font-medium">
-            NextJS, ReactJS, TypeScript
+        <Description className="text-justify">
+          Olá! Sou João Vitor, um desenvolvedor web especializado em{' '}
+          <span className="text-foreground">TypeScript e Node.js</span>, com
+          forte expertise em criar sistemas corporativos escaláveis, interfaces
+          envolventes e aplicativos sofisticados. Minha experiência abrange o
+          uso de frameworks como{' '}
+          <span className="text-foreground">
+            React.js, Next.js, Nest.js e Fastify
           </span>
-          , entre outros. Gosto de soluções robustas e amigáveis ao usuário,
-          priorizando escalabilidade, acessibilidade e performance.
+          , proporcionando soluções integradas e eficientes. Além disso, possuo
+          sólido conhecimento em gestão e manipulação de bancos de dados,
+          incluindo <span className="text-foreground">MySQL e PostgreSQL</span>,
+          garantindo que suas aplicações sejam robustas e bem estruturadas.
+          Estou comprometido em entregar projetos que não apenas atendam, mas
+          superem suas expectativas.
         </Description>
       </CardInfo>
       <div className="w-full block space-y-6 md:flex md:space-y-0 md:items-center md:justify-between md:gap-x-6">
         <CardInfo
           orientation="vertical"
-          title="Experiências"
+          title="Formações"
           icon={BackpackIcon}
           href={linkedinLink}
           linkLabel="Me contrate"
         >
-          <Experiences />
+          <Academic />
         </CardInfo>
         <CardInfo
           orientation="vertical"
           title="Tecs que mais utilizo"
-          icon={LaptopIcon}
+          icon={LightningBoltIcon}
           href="/uses"
           linkLabel="Ver todas"
         >

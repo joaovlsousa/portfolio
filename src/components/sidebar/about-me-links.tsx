@@ -2,9 +2,9 @@
 
 import {
   ClipboardIcon,
-  DesktopIcon,
   HomeIcon,
   LayersIcon,
+  LightningBoltIcon,
 } from '@radix-ui/react-icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -27,9 +27,9 @@ export function AboutMeLinks() {
       icon: LayersIcon,
     },
     {
-      label: 'Tecnologias e Ferramentas',
+      label: 'Tecnologias',
       href: '/uses',
-      icon: DesktopIcon,
+      icon: LightningBoltIcon,
     },
   ]
 

@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 
 import { Description } from '@/components/layout/description'
+import { Tech } from '@/components/layout/tech'
 import { Title } from '@/components/layout/title'
-import { Tech } from '@/components/tech'
 import { stacks } from '@/data/stacks'
 
 export const metadata: Metadata = {

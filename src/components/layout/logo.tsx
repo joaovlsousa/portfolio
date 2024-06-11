@@ -20,7 +20,7 @@ export function Logo() {
         height={32}
         className="block dark:hidden"
       />
-      <h1 className={cn('text-3xl uppercase', nats.className)}>joaols</h1>
+      <h1 className={cn('text-[28px] uppercase', nats.className)}>joaols</h1>
     </div>
   )
 }

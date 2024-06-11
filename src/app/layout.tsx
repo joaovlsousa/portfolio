@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { Sidebar } from '@/components/sidebar'
 import { Navbar } from '@/components/sidebar/navbar'
 import { poppins } from '@/fonts'
+import { cn } from '@/lib/utils'
 import { Providers } from '@/providers'
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={poppins.className}>
+      <body className={cn('antialiased scroll-smooth', poppins.className)}>
         <Providers>
           <Navbar />
           <Sidebar />
