@@ -8,6 +8,8 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
+import { Button } from './button'
+
 const Sheet = SheetPrimitive.Root
 
 const SheetTrigger = SheetPrimitive.Trigger
@@ -52,24 +54,26 @@ const sheetVariants = cva(
 
 interface SheetContentProps
   extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-    VariantProps<typeof sheetVariants> {}
+    VariantProps<typeof sheetVariants> {
+      onClose?: () => void
+    }
 
 const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   SheetContentProps
->(({ side = 'right', className, children, ...props }, ref) => (
+>(({ side = 'right', className, children, onClose, ...props }, ref) => (
   <SheetPortal>
-    <SheetOverlay />
+    <SheetOverlay onClick={onClose} />
     <SheetPrimitive.Content
       ref={ref}
       className={cn(sheetVariants({ side }), className)}
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <Cross2Icon className="h-4 w-4" />
+      <Button onClick={onClose} variant="ghost" size="icon" className="absolute right-4 top-7">
+        <Cross2Icon className="size-4" />
         <span className="sr-only">Close</span>
-      </SheetPrimitive.Close>
+      </Button>
     </SheetPrimitive.Content>
   </SheetPortal>
 ))

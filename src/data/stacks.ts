@@ -15,16 +15,26 @@ export const stacks: Stack[] = [
     title: 'Front-end',
     items: [
       {
-        name: 'CSS',
-        icon: '/techs/css.svg',
-      },
-      {
         name: 'HTML',
         icon: '/techs/html.svg',
       },
       {
+        name: 'CSS',
+        icon: '/techs/css.svg',
+      },
+      {
         name: 'JavaScript',
         icon: '/techs/javascript.svg',
+      },
+      {
+        name: 'Typescript',
+        icon: '/techs/typescript.svg',
+        mostUsed: true,
+      },
+      {
+        name: 'React.js',
+        icon: '/techs/react.svg',
+        mostUsed: true,
       },
       {
         name: 'Next.js',
@@ -36,16 +46,6 @@ export const stacks: Stack[] = [
         name: 'Radix',
         icon: '/techs/radix.svg',
         invert: true,
-      },
-      {
-        name: 'React.js',
-        icon: '/techs/react.svg',
-        mostUsed: true,
-      },
-      {
-        name: 'Typescript',
-        icon: '/techs/typescript.svg',
-        mostUsed: true,
       },
       {
         name: 'TailwindCSS',
@@ -61,6 +61,14 @@ export const stacks: Stack[] = [
   {
     title: 'Back-end',
     items: [
+      {
+        name: 'Typescript',
+        icon: '/techs/typescript.svg',
+      },
+      {
+        name: 'Node',
+        icon: '/techs/nodejs.svg',
+      },
       {
         name: 'Express',
         icon: '/techs/express.svg',
@@ -80,19 +88,6 @@ export const stacks: Stack[] = [
         name: 'Java',
         icon: '/techs/java.svg',
       },
-      {
-        name: 'Node',
-        icon: '/techs/nodejs.svg',
-      },
-      {
-        name: 'Typescript',
-        icon: '/techs/typescript.svg',
-      },
-      {
-        name: 'Prisma',
-        icon: '/techs/prisma.svg',
-        invert: true,
-      },
     ],
   },
   {
@@ -111,6 +106,11 @@ export const stacks: Stack[] = [
         name: 'Docker',
         icon: '/techs/docker.svg',
         mostUsed: true,
+      },
+      {
+        name: 'Prisma',
+        icon: '/techs/prisma.svg',
+        invert: true,
       },
     ],
   },

@@ -7,6 +7,8 @@ import { stacks } from '@/data/stacks'
 
 export const metadata: Metadata = {
   title: 'Tecnologias e Ferramentas',
+  description:
+    'Explore as tecnologias e ferramentas que impulsionam minha jornada no desenvolvimento.',
 }
 
 export default function UsesPage() {
@@ -15,10 +17,10 @@ export default function UsesPage() {
       <section className="space-y-3">
         <Title>Tecnologias e Ferramentas</Title>
         <Description>
-          Explore as tecnologias e ferramentas que impulsionam a minha
-          experiência em desenvolvimento. Eu seleciono e uso detalhadamente
-          essas ferramentas para criar soluções robustas e eficientes,
-          priorizando sempre a experiência do usuário.
+          Explore as tecnologias e ferramentas que impulsionam minha jornada no
+          desenvolvimento. Com uma seleção criteriosa e uso detalhado dessas
+          ferramentas, crio soluções robustas e eficientes, sempre com foco na
+          experiência do usuário.
         </Description>
       </section>
 

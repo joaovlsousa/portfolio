@@ -10,26 +10,31 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { Button } from '@/components/ui/button'
+import { useSidebar } from '@/hooks/use-sidebar'
 import { cn } from '@/lib/utils'
 
 export function AboutMeLinks() {
   const pathname = usePathname()
+  const { onClose } = useSidebar()
 
   const links = [
     {
       label: 'Sobre mim',
       href: '/about-me',
       icon: ClipboardIcon,
+      onClick: () => onClose(),
     },
     {
       label: 'Projetos',
       href: '/projects',
       icon: LayersIcon,
+      onClick: () => onClose(),
     },
     {
       label: 'Tecnologias',
       href: '/uses',
       icon: LightningBoltIcon,
+      onClick: () => onClose(),
     },
   ]
 
@@ -38,6 +43,7 @@ export function AboutMeLinks() {
       <Button
         asChild
         variant="ghost"
+        onClick={() => onClose()}
         className={cn(
           'w-full hover:bg-sky-700/15 justify-start',
           pathname === '/' && 'bg-sky-700/15',
@@ -61,6 +67,7 @@ export function AboutMeLinks() {
               key={link.href}
               asChild
               variant="ghost"
+              onClick={link.onClick}
               className={cn(
                 'w-full hover:bg-sky-700/15 justify-start group',
                 pathname === link.href && 'bg-sky-700/15',

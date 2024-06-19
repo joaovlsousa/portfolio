@@ -1,27 +1,25 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 
 import { Description } from '@/components/layout/description'
 import { Title } from '@/components/layout/title'
 import { Project } from '@/components/project'
-import { githubLink } from '@/lib/data/links'
 
 export const metadata: Metadata = {
-  title: 'Meus projetos',
+  title: 'Projetos',
+  description:
+    'Explore meus projetos e veja como transformo ideias em soluções inovadoras.',
 }
 
 export default function ProjectsPage() {
   return (
     <div className="space-y-6">
       <section className="space-y-3">
-        <Title>Meus projetos</Title>
+        <Title>Projetos</Title>
         <Description>
-          Aqui estão alguns de meus projetos que desenvolvi, você pode encontra
-          mais em meu{' '}
-          <Link href={githubLink} className="text-sky-500 underline">
-            Github
-          </Link>
-          .
+          Explore meus projetos e veja como transformo ideias em soluções
+          inovadoras. Cada projeto é cuidadosamente elaborado para ser robusto e
+          eficiente, sempre com um compromisso inabalável com a experiência do
+          usuário.
         </Description>
       </section>
       <section className="space-y-3">

@@ -10,23 +10,29 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { emailLink, githubLink, linkedinLink } from '@/data/links'
+import { useSidebar } from '@/hooks/use-sidebar'
 
 export function SocialLinks() {
+  const { onClose } = useSidebar()
+
   const links = [
     {
       label: 'Github',
       href: githubLink,
       icon: GitHubLogoIcon,
+      onClick: () => onClose(),
     },
     {
       label: 'LinkedIn',
       href: linkedinLink,
       icon: LinkedInLogoIcon,
+      onClick: () => onClose(),
     },
     {
       label: 'E-mail',
       href: emailLink,
       icon: EnvelopeClosedIcon,
+      onClick: () => onClose(),
     },
   ]
 
@@ -40,6 +46,7 @@ export function SocialLinks() {
           <Button
             key={link.href}
             asChild
+            onClick={link.onClick}
             variant="ghost"
             className="w-full hover:bg-sky-700/15 justify-start group"
           >

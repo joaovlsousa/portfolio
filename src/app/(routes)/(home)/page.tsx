@@ -28,7 +28,7 @@ export default function Home() {
         linkLabel="Saiba mais"
       >
         <Description className="text-justify">
-          Olá! Sou João Vitor, um desenvolvedor web especializado em{' '}
+          Olá! me chamo João Vitor, sou um desenvolvedor web especializado em{' '}
           <span className="text-foreground">TypeScript e Node.js</span>, com
           forte expertise em criar sistemas corporativos escaláveis, interfaces
           envolventes e aplicativos sofisticados. Minha experiência abrange o

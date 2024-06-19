@@ -19,10 +19,12 @@ export function Header() {
         priority
         className="rounded-full"
       />
-      <div className="w-[calc(100%-124px)] lg:w-full space-y-1">
-        <h1 className="text-3xl font-bold">João Vitor</h1>
-        <p className="text-muted-foreground">Desenvolvedor web, Full-stack.</p>
-        <div className="flex items-center gap-x-4 overflow-x-auto pb-2">
+      <div className="w-[calc(100%-124px)] lg:w-full space-y-0.5">
+        <h1 className="text-2xl md:text-3xl font-bold">João Vitor</h1>
+        <p className="text-sm md:text-bse text-muted-foreground">
+          Desenvolvedor web, Full-stack.
+        </p>
+        <div className="flex items-center gap-x-4 overflow-x-auto py-2">
           {techs.map(({ name }) => (
             <Badge key={name} variant="secondary">
               {name}
