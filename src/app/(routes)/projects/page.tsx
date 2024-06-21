@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 
 import { Description } from '@/components/layout/description'
 import { Title } from '@/components/layout/title'
-import { Project } from '@/components/project'
 
 export const metadata: Metadata = {
   title: 'Projetos',
@@ -24,14 +23,7 @@ export default function ProjectsPage() {
       </section>
       <section className="space-y-3">
         <Title>Front-end</Title>
-        <div className="space-y-8">
-          <Project
-            title="Supportify"
-            description="Um site que tem como objetivo gerenciar os atendimentos de um usuário ou empresa. Você pode cadastrar tanto clientes quanto atendimentos referentes aos seus clientes."
-            githubUrl="https://github.com/joaovlsousa/supportify"
-            imageUrl="/projects/support-management.png"
-          />
-        </div>
+        <div className="space-y-3"></div>
       </section>
     </div>
   )

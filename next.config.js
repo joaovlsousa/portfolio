@@ -7,6 +7,10 @@ const nextConfig = {
         protocol: 'https',
         pathname: '/joaovlsousa.png',
       },
+      {
+        hostname: 'anhghlqeivqemenrwgot.supabase.co',
+        protocol: 'https',
+      },
     ],
   },
 }

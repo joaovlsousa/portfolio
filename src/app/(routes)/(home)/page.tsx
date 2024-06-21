@@ -6,8 +6,8 @@ import {
 } from '@radix-ui/react-icons'
 
 import { Description } from '@/components/layout/description'
+import { Project } from '@/components/layout/project'
 import { Tech } from '@/components/layout/tech'
-import { Project } from '@/components/project'
 import { linkedinLink } from '@/data/links'
 import { getMostUsedTechs } from '@/data/stacks'
 
@@ -74,7 +74,7 @@ export default function Home() {
         href="/projects"
         linkLabel="Ver todos"
       >
-        <div className="space-y-8">
+        <div className="space-y-3">
           <Project
             title="Supportify"
             description="Um site que tem como objetivo gerenciar os atendimentos de um usuário ou empresa. Você pode cadastrar tanto clientes quanto atendimentos referentes aos seus clientes."

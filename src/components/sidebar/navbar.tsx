@@ -1,6 +1,6 @@
 import { Logo } from '@/components/layout/logo'
-import { ModeToggle } from '@/components/mode-toggle'
 import { MobileSidebar } from '@/components/sidebar/mobile-sidebar'
+import { ModeToggle } from '@/components/ui/mode-toggle'
 
 export function Navbar() {
   return (

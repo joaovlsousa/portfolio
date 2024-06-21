@@ -13,6 +13,7 @@ import { Info } from './_components/info'
 
 export const metadata: Metadata = {
   title: 'Sobre mim',
+  description: 'Descubra um pouco sobre minhas experiências',
 }
 
 export default function AboutMePage() {

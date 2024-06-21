@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
 import { Logo } from '@/components/layout/logo'
-import { ModeToggle } from '@/components/mode-toggle'
 import { AboutMeLinks } from '@/components/sidebar/about-me-links'
 import { SocialLinks } from '@/components/sidebar/social-links'
 import { Button } from '@/components/ui/button'
+import { ModeToggle } from '@/components/ui/mode-toggle'
 import { Separator } from '@/components/ui/separator'
 import { githubLink } from '@/data/links'
 import { cn } from '@/lib/utils'
