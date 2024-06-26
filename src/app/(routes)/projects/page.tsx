@@ -1,7 +1,13 @@
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 
 import { Description } from '@/components/layout/description'
 import { Title } from '@/components/layout/title'
+
+import {
+  ProjectsByTags,
+  ProjectsByTagsSkeleton,
+} from './_components/projects-by-tags'
 
 export const metadata: Metadata = {
   title: 'Projetos',
@@ -21,10 +27,9 @@ export default function ProjectsPage() {
           usuário.
         </Description>
       </section>
-      <section className="space-y-3">
-        <Title>Front-end</Title>
-        <div className="space-y-3"></div>
-      </section>
+      <Suspense fallback={<ProjectsByTagsSkeleton />}>
+        <ProjectsByTags />
+      </Suspense>
     </div>
   )
 }
