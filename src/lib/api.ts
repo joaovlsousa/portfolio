@@ -6,20 +6,22 @@ interface Project {
   type: 'BACKEND' | 'FRONTEND'
   imageUrl: string
   githubUrl: string
-  appUrl?: string
+  deployUrl?: string
 }
 
 export async function getPinnedProjects(): Promise<Project[]> {
   try {
-    const res = await fetch(`${process.env.API_URL}/projects/pinned`, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/projects/pinned`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+        },
+        next: {
+          tags: ['getPinnedProjects'],
+        },
       },
-      next: {
-        tags: ['getPinnedProjects'],
-      },
-    })
+    )
 
     const { projects }: { projects: Project[] } = await res.json()
 
@@ -34,8 +36,7 @@ export async function getProjectsByTags(): Promise<{
   backend: Project[]
 }> {
   try {
-    const res = await fetch(`${process.env.API_URL}/projects`, {
-      method: 'GET',
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, {
       headers: {
         Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
       },
