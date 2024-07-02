@@ -28,7 +28,7 @@ export async function ProjectsByTags() {
             description={project.description}
             githubUrl={project.githubUrl}
             imageUrl={project.imageUrl}
-            appUrl={project.appUrl}
+            appUrl={project.deployUrl}
           />
         ))}
       </div>
@@ -41,7 +41,7 @@ export async function ProjectsByTags() {
             description={project.description}
             githubUrl={project.githubUrl}
             imageUrl={project.imageUrl}
-            appUrl={project.appUrl}
+            appUrl={project.deployUrl}
           />
         ))}
       </div>

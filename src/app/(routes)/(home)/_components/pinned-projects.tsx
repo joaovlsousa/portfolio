@@ -25,7 +25,7 @@ export async function PinnedProjects() {
           description={project.description}
           githubUrl={project.githubUrl}
           imageUrl={project.imageUrl}
-          appUrl={project.appUrl}
+          appUrl={project.deployUrl}
         />
       ))}
     </div>
