@@ -4,9 +4,9 @@ import {
   DesktopIcon,
   LightningBoltIcon,
 } from '@radix-ui/react-icons'
+import { Suspense } from 'react'
 
 import { Description } from '@/components/layout/description'
-import { Project } from '@/components/layout/project'
 import { Tech } from '@/components/layout/tech'
 import { linkedinLink } from '@/data/links'
 import { getMostUsedTechs } from '@/data/stacks'
@@ -14,6 +14,10 @@ import { getMostUsedTechs } from '@/data/stacks'
 import { Academic } from './_components/academic'
 import { CardInfo } from './_components/card-info'
 import { Header } from './_components/header'
+import {
+  PinnedProjects,
+  PinnedProjectsSkeleton,
+} from './_components/pinned-projects'
 
 export default function Home() {
   const mostUsedTechs = getMostUsedTechs()
@@ -74,14 +78,9 @@ export default function Home() {
         href="/projects"
         linkLabel="Ver todos"
       >
-        <div className="space-y-3">
-          <Project
-            title="Supportify"
-            description="Um site que tem como objetivo gerenciar os atendimentos de um usuário ou empresa. Você pode cadastrar tanto clientes quanto atendimentos referentes aos seus clientes."
-            githubUrl="https://github.com/joaovlsousa/supportify"
-            imageUrl="/projects/support-management.png"
-          />
-        </div>
+        <Suspense fallback={<PinnedProjectsSkeleton />}>
+          <PinnedProjects />
+        </Suspense>
       </CardInfo>
     </>
   )

@@ -57,7 +57,7 @@ export function Project({
         <div className="flex items-center gap-x-4">
           {appUrl && (
             <Button asChild className="w-1/2">
-              <Link href={appUrl}>
+              <Link href={appUrl} target="_blank">
                 Visitar <ArrowTopRightIcon className="w-4 h-4 ml-2" />
               </Link>
             </Button>
