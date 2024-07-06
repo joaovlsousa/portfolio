@@ -5,22 +5,22 @@ import { cn } from '@/lib/utils'
 
 export function Logo() {
   return (
-    <div className="flex items-center gap-x-4">
+    <div className="flex">
       <Image
-        src="logo-ligth.svg"
+        src="logo-light.svg"
         alt="Logo"
-        width={32}
-        height={32}
+        width={64}
+        height={64}
         className="hidden dark:block"
       />
       <Image
         src="logo-dark.svg"
         alt="Logo"
-        width={32}
-        height={32}
+        width={64}
+        height={64}
         className="block dark:hidden"
       />
-      <h1 className={cn('text-[28px] uppercase', nats.className)}>joaols</h1>
+      <h1 className={cn('uppercase', nats.className)}>dev</h1>
     </div>
   )
 }

@@ -11,23 +11,9 @@ import { cn } from '@/lib/utils'
 import { Providers } from '@/providers'
 
 export const metadata: Metadata = {
-  title: 'João Vitor - Desenvolvedor Front-end',
+  title: 'João Vitor - Desenvolvedor Full Stack',
   description:
-    'João Vitor: Desenvolvedor front-end apaixonado por criar experiências digitais incríveis. Explore meu portfólio e descubra como minhas habilidades em programação podem impulsionar seu projeto. Descubra meu trabalho e entre em contato para colaborações ou oportunidades profissionais.',
-  icons: [
-    {
-      rel: 'icon',
-      type: 'image/svg',
-      url: '/logo-dark.svg',
-      media: '(prefers-color-scheme: light)',
-    },
-    {
-      rel: 'icon',
-      type: 'image/svg',
-      url: '/logo-ligth.svg',
-      media: '(prefers-color-scheme: dark)',
-    },
-  ],
+    'Olá! me chamo João Vitor, sou um desenvolvedor web especializado em TypeScript e Node.js, com forte expertise em criar sistemas corporativos escaláveis, interfaces envolventes e aplicativos sofisticados. Minha experiência abrange o uso de frameworks como React.js, Next.js, Nest.js e Fastify, proporcionando soluções integradas e eficientes. Além disso, possuo sólido conhecimento em gestão e manipulação de bancos de dados, incluindo MySQL e PostgreSQL, garantindo que suas aplicações sejam robustas e bem estruturadas. Estou comprometido em entregar projetos que não apenas atendam, mas superem suas expectativas.',
 }
 
 export default function RootLayout({
