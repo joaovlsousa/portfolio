@@ -48,7 +48,7 @@ export function Academic() {
       ))}
       <Button className="w-full" asChild>
         <Link
-          href="/documents/Joao_Vitor_Dev_Frontend.pdf"
+          href="/documents/joao_vitor_dev_fullstack.pdf"
           download
           rel="noopener noreferrer"
           target="_blank"
